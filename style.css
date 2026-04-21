@@ -1,0 +1,98 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #080B12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 8px;
+  color: #00E8A2;
+  margin-bottom: 24px;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.score-box { text-align: center; }
+
+.score-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 4px;
+}
+
+.score-value { font-size: 32px; font-weight: 500; }
+
+#scoreEl { color: #ffffff; }
+#bestEl  { color: #00E8A2; }
+
+#lvlBadge {
+  font-size: 11px;
+  letter-spacing: 2px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+canvas { border-radius: 10px; display: block; }
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+select {
+  background: rgba(255,255,255,0.07);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+}
+
+select:hover { background: rgba(255,255,255,0.12); }
+
+button {
+  background: #00E8A2;
+  color: #080B12;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover  { background: #00C98D; }
+button:active { transform: scale(0.97); }
+
+.hint {
+  margin-top: 14px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.25);
+}

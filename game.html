@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>SNAKE</h1>
+
+  <div class="scoreboard">
+    <div class="score-box">
+      <div class="score-label">SCORE</div>
+      <div class="score-value" id="scoreEl">0</div>
+    </div>
+    <div id="lvlBadge">MOYEN</div>
+    <div class="score-box">
+      <div class="score-label">MEILLEUR</div>
+      <div class="score-value" id="bestEl">0</div>
+    </div>
+  </div>
+
+  <canvas id="c" width="400" height="400"></canvas>
+
+  <div class="controls">
+    <select id="diff">
+      <option value="easy">Facile</option>
+      <option value="medium" selected>Moyen</option>
+      <option value="hard">Difficile</option>
+    </select>
+    <button id="btn">Jouer</button>
+  </div>
+
+  <p class="hint">FLÈCHES ou WASD &nbsp;·&nbsp; ESPACE pour pause</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
